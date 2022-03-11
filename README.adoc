@@ -30,14 +30,14 @@ Ce TP vise à reprendre les diagrammes des UC et les lier avec le diagramme de c
 
 == À propos...
 
-NOM:: DOE
+NOM:: MAZEAU
 
-Prénom:: John
+Prénom:: Antoine
 
-Groupe #::
+Groupe #:: 2A
 
 [%interactive]
-- [X] Enseignants
+- [X] Natalie Neptune
 - [ ] 1
 - [ ] 2
 - [ ] 3
