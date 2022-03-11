@@ -1,0 +1,41 @@
+@startuml DC
+
+skinparam roundcorner 5
+
+skinparam class {
+	BackgroundColor AliceBlue
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName Helvetica
+}
+
+class Entreprise {
+    int nbEmployes
+    calculerPaies()
+}
+class Chantier {
+    String dateDebut
+    String dateFin
+    String adresse
+    getPayeArtisan()
+}
+class Artisan {
+    String coordonnees
+    String specialite
+    float salaireHoraire
+}
+class Affecter {
+    int heuresEffectuees
+    String dateDebutM
+    String dateFinM
+}
+Artisan "0..*" - "0..*" Chantier    
+(Artisan, Chantier) .. Affecter
+
+Entreprise "1" -- "0..*" Artisan
+Entreprise "1"- "0..*" Chantier
+
+hide circle
+@enduml
