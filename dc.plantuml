@@ -1,4 +1,16 @@
 @startuml DC
+
+skinparam roundcorner 5
+
+skinparam class {
+	BackgroundColor AliceBlue
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName Helvetica
+}
+
 class Entreprise {
     int nbEmployes
     calculerPaies()
@@ -21,6 +33,9 @@ class Affecter {
 }
 Artisan "0..*" - "0..*" Chantier    
 (Artisan, Chantier) .. Affecter
+
+Entreprise "1" -- "0..*" Artisan
+Entreprise "1"- "0..*" Chantier
 
 hide circle
 @enduml
